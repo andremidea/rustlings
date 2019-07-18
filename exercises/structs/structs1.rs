@@ -7,7 +7,7 @@ struct ColorClassicStruct {
     // TODO: Something goes here
 }
 
-struct ColorTupleStruct(/* TODO: Something goes here */);
+struct ColorTupleStruct(String, String);
 
 #[derive(Debug)]
 struct UnitStruct;
@@ -18,8 +18,7 @@ mod tests {
 
     #[test]
     fn classic_c_structs() {
-        // TODO: Instantiate a classic c struct!
-        // let green =
+        let green = ColorClassicStruct {name:"green", hex:"#0FF0"};
 
         assert_eq!(green.name, "green");
         assert_eq!(green.hex, "#0FF0");
@@ -36,8 +35,7 @@ mod tests {
 
     #[test]
     fn unit_structs() {
-        // TODO: Instantiate a unit struct!
-        // let unit_struct =
+        let unit_struct = UnitStruct;
         let message = format!("{:?}s are fun!", unit_struct);
 
         assert_eq!(message, "UnitStructs are fun!");

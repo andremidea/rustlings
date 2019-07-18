@@ -21,11 +21,6 @@ fn calculateprice(units: u8) -> u8 {
 // Don't modify this function!
 #[test]
 fn verify_test() {
-    let price1 = calculate_apple_price(35);
-    let price2 = calculate_apple_price(65);
-
-    assert_eq!(70, price1);
-    assert_eq!(65, price2);
     let price1 = calculateprice(55);
     let price2 = calculateprice(40);
     let price3 = calculateprice(10);
