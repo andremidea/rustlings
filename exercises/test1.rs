@@ -10,7 +10,13 @@
 // I AM NOT DONE
 
 // Put your function here!
-// fn ..... {
+fn calculateprice(units: u8) -> u8 {
+    if (units > 40) {
+        units
+    } else {
+        units * 2
+    }
+}
 
 // Don't modify this function!
 #[test]
@@ -20,4 +26,12 @@ fn verify_test() {
 
     assert_eq!(70, price1);
     assert_eq!(65, price2);
+    let price1 = calculateprice(55);
+    let price2 = calculateprice(40);
+    let price3 = calculateprice(10);
+
+
+    assert_eq!(price1, 55);
+    assert_eq!(price2, 80);
+    assert_eq!(price3, 20);
 }

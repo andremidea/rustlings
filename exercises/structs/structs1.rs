@@ -1,4 +1,4 @@
-// structs1.rs
+// structs2.rs
 // Address all the TODOs to make the tests pass!
 
 // I AM NOT DONE
@@ -22,7 +22,7 @@ mod tests {
         // let green =
 
         assert_eq!(green.name, "green");
-        assert_eq!(green.hex, "#00FF00");
+        assert_eq!(green.hex, "#0FF0");
     }
 
     #[test]
