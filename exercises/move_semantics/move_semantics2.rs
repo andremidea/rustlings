@@ -5,9 +5,12 @@
 // I AM NOT DONE
 
 fn main() {
-    let vec0 = Vec::new();
 
-    let mut vec1 = fill_vec(vec0);
+    // the fill_vec moves the ownership of vec0, so either pass it as a ref, and create a mutable version of it and return
+    // or do what i did here.
+    let vec0 = fill_vec(Vec::new());
+
+    let mut vec1 = vec0.clone();
 
     // Do not change the following line!
     println!("{} has length {} content `{:?}`", "vec0", vec0.len(), vec0);
