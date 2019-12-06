@@ -2,8 +2,6 @@
 // Make me compile without changing line 13!
 // Execute `rustlings hint move_semantics2` for hints :)
 
-// I AM NOT DONE
-
 fn main() {
 
     // the fill_vec moves the ownership of vec0, so either pass it as a ref, and create a mutable version of it and return

@@ -1,8 +1,6 @@
 // enums3.rs
 // Address all the TODOs to make the tests pass!
 
-// I AM NOT DONE
-
 enum Message {
     Move{x: u8, y: u8},
     Echo(String),
